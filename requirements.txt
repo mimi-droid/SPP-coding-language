@@ -1,0 +1,18 @@
+# SPP Compiler 0.3.0 requirements
+#
+# Python: 3.8 or newer (the compiler itself uses only the Python standard
+# library; there are no packages to install with pip).
+#
+# Required to build and run SPP programs:
+# - A C++17-capable compiler available on PATH: g++ or clang++.
+#   On Windows, MSYS2 UCRT64 g++ or LLVM clang++ are supported.
+# - For Windows GUI programs, use a Windows-capable g++ toolchain with the
+#   Windows user32 and gdi32 libraries (the compiler links these automatically).
+#
+# From this folder, check or build/run an SPP source file with:
+#   python "SPP COMPILER.py" check "spp\spp gui.spp"
+#   python "SPP COMPILER.py" build "spp\spp gui.spp"
+#   python "SPP COMPILER.py" run "spp\spp gui.spp"
+#
+# `build` writes the executable to the `exe` folder by default. `run` compiles
+# first, then launches the executable. No Python packages need to be installed.
